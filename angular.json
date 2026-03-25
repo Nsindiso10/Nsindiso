@@ -13,6 +13,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "baseHref": "/Nsindiso/",
+            "deployUrl": "/Nsindiso/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
