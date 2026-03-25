@@ -9,13 +9,13 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class Certification {
 
-  certificates = [
-  { title: 'IT Essentials', image: 'images/IT-Essential.jpeg' },
-  { title: 'Introduction to Networks', image: 'images/Introduction-to-Network.jpeg' },
-  { title: 'Data Science 101', image: 'images/Data-Science.jpeg' },
-  { title: 'Badges', image: 'images/CCNAv_vs_AWS.jpeg' },
-  { title: 'AWS Badges', image: 'images/AWS-badges.jpeg' },
-  { title: 'AWS Educate', image: 'images/AWS-Educate.jpeg' }
+ certificates = [
+  { title: 'IT Essentials', image: '/Nsindiso-Mncedisi_Ngema/assets/images/IT-Essential.jpeg' },
+  { title: 'Introduction to Networks', image: '/Nsindiso-Mncedisi_Ngema/assets/images/Introduction-to-Network.jpeg' },
+  { title: 'Data Science 101', image: '/Nsindiso-Mncedisi_Ngema/assets/images/Data-Science.jpeg' },
+  { title: 'Badges', image: '/Nsindiso-Mncedisi_Ngema/assets/images/CCNAv_vs_AWS.jpeg' },
+  { title: 'AWS Badges', image: '/Nsindiso-Mncedisi_Ngema/assets/images/AWS-badges.jpeg' },
+  { title: 'AWS Educate', image: '/Nsindiso-Mncedisi_Ngema/assets/images/AWS-Educate.jpeg' }
 ];
 
   startIndex = 0;
