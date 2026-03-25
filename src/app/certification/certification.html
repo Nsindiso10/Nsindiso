@@ -1,0 +1,29 @@
+<section id="certificates" class="certificates-section">
+  <h1 class="section-title">Certificates</h1>
+
+  <div class="carousel-wrapper">
+    <button class="nav left" (click)="prev()">‹</button>
+
+    <div class="carousel">
+      <div class="certificate-card" *ngFor="let cert of visibleCertificates">
+        <img
+          [src]="cert.image"
+          [alt]="cert.title"
+          class="certificate-thumbnail"
+          (click)="openCertificate(cert)"
+        />
+        <h3 class="certificate-title">{{ cert.title }}</h3>
+      </div>
+    </div>
+
+    <button class="nav right" (click)="next()">›</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="certificate-modal" *ngIf="selectedCertificate">
+    <div class="modal-content">
+      <button class="close-btn" (click)="closeCertificate()">×</button>
+      <img [src]="selectedCertificate.image" [alt]="selectedCertificate.title" />
+    </div>
+  </div>
+</section>

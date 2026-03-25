@@ -1,0 +1,206 @@
+.education-section {
+  padding: 2rem 1.2rem;
+  background: linear-gradient(
+    180deg,
+    #fdfbf6 0%,
+    #f9f6ef 50%,
+    #f6f2e8 100%
+  );
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #e9ece8;
+  border-radius: 28px;
+  padding: 3rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+.section-label {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+  text-align: center;
+}
+
+.section-underline {
+  width: 48px;
+  height: 4px;
+  background: bisque;
+  border-radius: 999px;
+  margin: 0.5rem auto 0;
+}
+
+.education-timeline {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2.5rem;
+  border-left: 2px solid rgba(30, 94, 255, 0.3);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.education-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.card-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.status-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.status-completed {
+  color: black;
+  background: rgba(30, 94, 255, 0.1);
+}
+
+.status-in-progress {
+  color: black;
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.institution {
+  margin-top: 0.3rem;
+  font-size: 18px;
+  color: black;
+}
+
+.coverage-title {
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.coverage-list {
+  margin-top: 0.6rem;
+  list-style: none;
+  padding: 0;
+}
+
+.coverage-list li {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.coverage-list .dot {
+  width: 6px;
+  height: 6px;
+  margin-top: 0.55rem;
+  border-radius: 50%;
+  background: #1e5eff;
+  flex-shrink: 0;
+}
+
+
+/* ---------- TABLET ---------- */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 2rem;
+    border-radius: 20px;
+  }
+
+  .section-label {
+    font-size: 26px;
+  }
+
+  .institution {
+    font-size: 16px;
+  }
+
+  .education-card {
+    padding: 1.3rem;
+  }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px) {
+
+  .education-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+    border-radius: 18px;
+  }
+
+  .section-label {
+    font-size: 22px;
+    letter-spacing: 0.15em;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .timeline-dot {
+    width: 22px;
+    height: 22px;
+    left: -11px;
+    font-size: 0.7rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .institution {
+    font-size: 15px;
+  }
+
+  .coverage-title {
+    font-size: 0.8rem;
+  }
+
+  .coverage-list li {
+    font-size: 0.8rem;
+  }
+
+}

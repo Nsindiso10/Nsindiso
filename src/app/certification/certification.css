@@ -1,0 +1,136 @@
+
+.certificates-section{
+  background:#faf7f2;
+  padding:40px 0;
+}
+
+.section-title{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:40px;
+}
+
+.carousel-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+.carousel{
+  display:flex;
+  gap:2rem;
+  width:100%;
+  max-width:1000px;
+  overflow:hidden;
+}
+
+.certificate-card{
+  width:300px;
+  flex-shrink:0;
+  text-align:center;
+}
+
+.certificate-thumbnail{
+  width:100%;
+  height:200px;
+  object-fit:contain;
+  border-radius:10px;
+  cursor:pointer;
+  transition:transform .3s ease;
+}
+
+.certificate-thumbnail:hover{
+  transform:scale(1.05);
+}
+
+.certificate-title{
+  margin-top:10px;
+  font-size:1.2rem;
+  font-weight:600;
+}
+
+.nav{
+  background:#f5c400;
+  border:none;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  font-size:2rem;
+  cursor:pointer;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+.nav.left{
+  left:10px;
+}
+
+.nav.right{
+  right:10px;
+}
+.certificate-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99999;
+}
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+html, body{
+  overflow-x:hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width:768px){
+
+  .carousel{
+    gap:1rem;
+  }
+
+  .certificate-card{
+    width:220px;
+  }
+
+  .nav{
+    width:35px;
+    height:35px;
+    font-size:1.5rem;
+  }
+
+}

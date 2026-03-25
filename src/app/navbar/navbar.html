@@ -1,0 +1,44 @@
+<nav class="navbar">
+  <!-- LEFT LOGO -->
+  <div class="logo">
+    <h1>NGEMA</h1>
+  </div>
+
+  <!-- CENTER NAV LINKS -->
+  <ul class="nav-links">
+    <li (click)="scrollTo('home')">Home</li>
+    <li (click)="scrollTo('skills')">Skills</li>
+    <li (click)="scrollTo('experience')">Experience</li>
+    <li (click)="scrollTo('education')">Education</li>
+    <li (click)="scrollTo('projects')">Projects</li>
+    <li (click)="scrollTo('certificates')">Certificates</li>
+    
+  </ul>
+</nav>
+
+<nav class="navbar">
+
+  <div class="logo">
+    <h1>NS<span>.</span></h1>
+  </div>
+
+  <!-- MENU ICON (ONLY MOBILE) -->
+  <div class="menu-icon" (click)="toggleMenu()">
+    ☰
+  </div>
+
+  <ul class="nav-links" [class.active]="menuOpen">
+   <li (click)="scrollTo('home')">Home</li>
+    <li (click)="scrollTo('skills')">Skills</li>
+    <li (click)="scrollTo('experience')">Experience</li>
+    <li (click)="scrollTo('education')">Education</li>
+    <li (click)="scrollTo('projects')">Projects</li>
+    <li (click)="scrollTo('certificates')">Certificates</li>
+    
+  </ul>
+
+</nav>
+
+
+
+
