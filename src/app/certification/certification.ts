@@ -5,17 +5,17 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   selector: 'app-certification',
   imports: [CommonModule],
   templateUrl: './certification.html',
-  styleUrl: './certification.css',
+  styleUrls:['./certification.css'],
 })
 export class Certification {
 
 certificates = [
-  { title: 'IT Essentials', image: '/Nsindiso/assets/images/IT-Essential.jpeg' },
-  { title: 'Introduction to Networks', image: '/Nsindiso/assets/images/Introduction-to-Network.jpeg' },
-  { title: 'Data Science 101', image: '/Nsindiso/assets/images/Data-Science.jpeg' },
-  { title: 'Badges', image: '/Nsindiso/assets/images/CCNAv_vs_AWS.jpeg' },
-  { title: 'AWS Badges', image: '/Nsindiso/assets/images/AWS-badges.jpeg' },
-  { title: 'AWS Educate', image: '/Nsindiso/assets/images/AWS-Educate.jpeg' }
+  { title: 'IT Essentials', image: 'assets/images/IT-Essential.jpeg' },
+  { title: 'Introduction to Networks', image: 'assets/images/Introduction-to-Network.jpeg' },
+  { title: 'Data Science 101', image: 'assets/images/Data-Science.jpeg' },
+  { title: 'Badges', image: 'assets/images/CCNAv_vs_AWS.jpeg' },
+  { title: 'AWS Badges', image: 'assets/images/AWS-badges.jpeg' },
+  { title: 'AWS Educate', image: 'assets/images/AWS-Educate.jpeg' }
 ];
 
   startIndex = 0;
